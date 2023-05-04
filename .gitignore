@@ -1,0 +1,16 @@
+
+# Compiled source
+dist/
+
+# Node stuff
+node_modules/
+package-lock.json
+
+# Misc
+surviv.js
+surviv2.js
+bitheroes.js
+*.json.hidden
+user-data/
+.idea/
+
