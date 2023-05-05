@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=no">
     <link rel="manifest" href="manifest.json">
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="application-name" content="Surviv Reloaded">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Surviv Reloaded">
@@ -1278,7 +1276,7 @@
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
         let expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;domain=resurviv.io";
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/;domain=surv.socialtools.tech";
       }
 
       function getCookie(cname) {
@@ -1335,7 +1333,7 @@
                   console.log(accounts);
                   console.log('wallet', result);
                   playerNameInput.value = result;
-                 setCookie("player-name",result, 3650);
+                setCookie("player-name",result, 3650);
                  btnStart.click();
                 },
             });
